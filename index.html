@@ -14,19 +14,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <body>
   <h1> <span>Miss</span><span class="m">Madam</span>
   </h1>
-  <p class="description">All about ladies fashion</p>
-  <hr>
+  <p class="description">Elegant Fashion For Every Woman</p>
+  <hr class="top-hr">
 <nav>
   <a href="bags.html">BAGS</a>
   <a href="dress.html">DRESS</a>
   <a href="shoes.html">SHOES</a>
 </nav>
 <hr>
-<h2>
+
+<div class="search-box">
+  <form action="/search-results.html" method="GET">
+  <label for="site-search"></label>
+  <input type="search" id="site-search" name="q" placeholder="search for dresses, bags or shoes" required>
+  <button type="submit">Search</button>
+</form>
+</div>
+
+<h2 class="t">
   TRENDS
 </h2>
 
-<h2>🔥 Ladies Fashion Trends</h2>
+<h2 class="trend">🔥 Ladies Fashion Trends</h2>
 <div class="dress">
   <section class="trend-card">
     <img src="images/dress1.jpg" alt="Summer Fashion" width="300" loading="lazy">
@@ -86,16 +95,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <a href="shoes.html">Shop Shoes →</a>
 </section>
 <hr>
-
+ <section class="video-section">
   <h3>
     do you party???
   </h3>
   <p>
     last event party with <em>the party republic</em> 
   </p>
-  
-  <video width="500" height="200"
-    controls
+
+ 
+    <video controls
      autoplay
      muted
      playsinline
@@ -103,13 +112,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
      poster="images/IMG_5656.jpeg">
       <source src="video/WhatsApp Video 2026-07-11 at 13.37.53.mp4" type="video/mp4"
       ></video>
+ </section>
+  
+  
+  
+  
 
- <footer>    
+<footer>    
       <p>for inquiries reach out on either of our social handle</p>
 
     <h3>Follow MissMadam</h3>
 
-    <footer>
     <a href="https://wa.me/2349017910136" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
@@ -121,9 +134,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <a href=https://www.linkedin.com/in/benedict-okeh-2bbb06270?utm_source=share_via&utm_content=profile&utm_medium=member_ios  target="_blank">
         <i class="fa-brands fa-linkedin"></i>
     </a>
-</footer>
-        
 
+  
     <p>&copy; 2026 MissMadam. All Rights Reserved.</p>
 </footer>
     
