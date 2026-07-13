@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
 body{
   margin: 0;
   background: rgb(253, 253, 191);
@@ -62,7 +68,8 @@ nav a:hover{
 }
 
 .trend-card{
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     margin: 20px auto;
     padding: 15px;
     border: 1px solid #ddd;
@@ -134,12 +141,21 @@ h2{
     margin: 25px 0;
     width: 100%;
 }
+.search-box form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
 
 .search-box input{
-    width: 320px;
-    padding: 12px 15px;
+    flex: 1;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
     border: 2px solid #C11C84;
-    border-radius: 30px;
+    border-radius: 20px;
     outline: none;
     font-size: 16px;
 }
@@ -149,9 +165,9 @@ h2{
 }
 
 .search-box button{
-    padding: 12px 22px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     background: #C11C84;
     color: white;
     font-size: 16px;
@@ -163,6 +179,10 @@ h2{
 .search-box button:hover{
     background: #a4146d;
     transform: scale(1.05);
+}
+
+html,body{
+    overflow-x: hidden;
 }
 
 video {
@@ -224,6 +244,7 @@ footer a{
 
     .nav{
         flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
 
@@ -270,7 +291,7 @@ footer a{
 }
 
 @media (max-width: 768px) {
-    .search-container {
+    .search-box form {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -279,9 +300,12 @@ footer a{
 
     .search-container input {
         width: 90%;
+        max-width: none;
     }
 
     .search-container button {
-        width: 150px;
+        width: 90%;
+        max-width: none;
     }
 }
+
